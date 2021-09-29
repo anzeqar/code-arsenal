@@ -24,9 +24,9 @@ const App = () => {
     <div className="min-vh-100" style={{ backgroundColor: "#000" }}>
       <Router>
         <Navbar />
-        <Route path="/" exact component={HomePage} />
+        <Route path="/code-arsenal/" exact component={HomePage} />
         <Route
-          path="/stack"
+          path="/code-arsenal/stack"
           exact
           render={() => <DS header="Stack" gistId={gistDirectory[0].Stack} />}
         />

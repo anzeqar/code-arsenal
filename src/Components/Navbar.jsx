@@ -36,7 +36,10 @@ const Navbar = () => {
                   className="text-info text-decoration-none"
                   onClick={toggleIndex}
                 >
-                  <Link to="/stack" className="text-info text-decoration-none">
+                  <Link
+                    to="/code-arsenal/stack"
+                    className="text-info text-decoration-none"
+                  >
                     Stack
                   </Link>
                 </li>
@@ -79,7 +82,7 @@ const Navbar = () => {
       </div>
       <nav className="navbar navbar-dark sticky fixed-top position-fixed bg-dark">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand">
+          <Link to="/code-arsenal/" className="navbar-brand">
             {" "}
             <span>Code Arsenal</span>
           </Link>
