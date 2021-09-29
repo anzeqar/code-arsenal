@@ -37,9 +37,8 @@ const DS = ({ header, gistId }) => {
                   style={{ minWidth: "80px !important" }}
                 >
                   <li className="m-auto">
-                    <a
+                    <button
                       className="dropdown-item text-info bg-dark text-center"
-                      href="#js"
                       onClick={() =>
                         setLang({
                           gistId: gistId[0],
@@ -49,12 +48,11 @@ const DS = ({ header, gistId }) => {
                       }
                     >
                       JS
-                    </a>
+                    </button>
                   </li>
                   <li className="m-auto">
-                    <a
+                    <button
                       className="dropdown-item text-info bg-dark text-center"
-                      href="#js"
                       onClick={() =>
                         setLang({
                           gistId: gistId[1],
@@ -64,12 +62,11 @@ const DS = ({ header, gistId }) => {
                       }
                     >
                       C
-                    </a>
+                    </button>
                   </li>
                   <li className="m-auto">
-                    <a
+                    <button
                       className="dropdown-item text-info bg-dark text-center"
-                      href="#js"
                       onClick={() =>
                         setLang({
                           gistId: gistId[2],
@@ -79,12 +76,11 @@ const DS = ({ header, gistId }) => {
                       }
                     >
                       Py
-                    </a>
+                    </button>
                   </li>
                   <li className="m-auto">
-                    <a
+                    <button
                       className="dropdown-item text-info bg-dark text-center"
-                      href="#js"
                       onClick={() =>
                         setLang({
                           gistId: gistId[3],
@@ -94,12 +90,11 @@ const DS = ({ header, gistId }) => {
                       }
                     >
                       Java
-                    </a>
+                    </button>
                   </li>
                   <li className="m-auto">
-                    <a
+                    <button
                       className="dropdown-item text-info bg-dark text-center"
-                      href="#js"
                       onClick={() =>
                         setLang({
                           gistId: gistId[4],
@@ -109,7 +104,7 @@ const DS = ({ header, gistId }) => {
                       }
                     >
                       C++
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -117,7 +112,7 @@ const DS = ({ header, gistId }) => {
           </h1>
         </main>
         <div className="container">
-          <section id={lang.extension + "arr"}>
+          <section id={lang.extension}>
             <ReactEmbedGist
               gist={`anzeqar/${lang.gistId}`}
               file={`${header}.${lang.extension}`}
