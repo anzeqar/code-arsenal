@@ -24,9 +24,10 @@ const App = () => {
     <div className="min-vh-100" style={{ backgroundColor: "#000" }}>
       <Router>
         <Navbar />
-        <Route path="/" component={HomePage} />
+        <Route path="/" exact component={HomePage} />
         <Route
           path="/stack"
+          exact
           render={() => <DS header="Stack" gistId={gistDirectory[0].Stack} />}
         />
         <Footer />
