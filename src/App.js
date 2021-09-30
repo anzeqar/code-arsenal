@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar.jsx";
 import HomePage from "./Components/HomePage.jsx";
 import Footer from "./Components/Footer.jsx";
 
-import DS from "./Components/Code.jsx";
+import Code from "./Components/Code.jsx";
 
 const App = () => {
   //Format - js,c,py,java,c++
@@ -25,7 +25,9 @@ const App = () => {
         <Switch>
           <Route
             path="/code-arsenal/stack"
-            render={() => <DS header="Stack" gistId={gistDirectory[0].Stack} />}
+            render={() => (
+              <Code header="Stack" gistId={gistDirectory[0].Stack} />
+            )}
           />
           {/* <Route
             path="/code-arsenal/mergesort"
@@ -36,6 +38,7 @@ const App = () => {
           /> */}
 
           <Route path="/code-arsenal/" component={HomePage} />
+
           <Route component={HomePage} />
         </Switch>
         <Footer />

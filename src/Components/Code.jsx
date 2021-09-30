@@ -3,7 +3,7 @@ import { useState } from "react";
 import ReactEmbedGist from "react-embed-gist";
 import "../Gist.css";
 
-const DS = ({ header, gistId }) => {
+const Code = ({ header, gistId }) => {
   const [lang, setLang] = useState({
     gistId: gistId[0],
     text: "JS",
@@ -125,4 +125,4 @@ const DS = ({ header, gistId }) => {
   );
 };
 
-export default DS;
+export default Code;
