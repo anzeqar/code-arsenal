@@ -34,8 +34,8 @@ const App = () => {
               <DS header="Merge Sort" gistId={gistDirectory[1].MergeSort} />
             )}
           /> */}
-          <Route path="/code-arsenal/" component={HomePage} />
 
+          <Route path="/code-arsenal/" component={HomePage} />
           <Route component={HomePage} />
         </Switch>
         <Footer />
