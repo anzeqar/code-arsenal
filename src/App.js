@@ -25,7 +25,6 @@ const App = () => {
         <Switch>
           <Route
             path="/code-arsenal/stack"
-            exact
             render={() => <DS header="Stack" gistId={gistDirectory[0].Stack} />}
           />
           {/* <Route
@@ -35,9 +34,9 @@ const App = () => {
               <DS header="Merge Sort" gistId={gistDirectory[1].MergeSort} />
             )}
           /> */}
-          <Route path="/code-arsenal/" exact component={HomePage} />
+          <Route path="/code-arsenal/" component={HomePage} />
 
-          <Route path="/" component={HomePage} />
+          <Route component={HomePage} />
         </Switch>
         <Footer />
       </Router>
