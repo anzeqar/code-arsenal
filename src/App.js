@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./Components/Navbar.jsx";
 import HomePage from "./Components/HomePage.jsx";
@@ -11,25 +11,34 @@ const App = () => {
   //Format - js,c,py,java,c++
   const gistDirectory = [
     {
-      Stack: [
-        "fa2b93b9cd74fa81f9af34baf69177ed",
-        "036ab70dd9e81c67084851f6aff84935",
-        "3b0d5e1eb0661b92e2430d5a35e5b6c6",
-        "310c2e2e651da9361f2a68a2661ab3df",
-        "6f59de5717b30ac59d98aa322a0f653a",
-      ],
+      Stack: ["74740c439f49e8a72a96973651b3bf30", "", "", "", ""],
     },
+    // {
+    //   MergeSort: ["","","","",""],
+    // },
   ];
+  // {}
   return (
     <div className="min-vh-100" style={{ backgroundColor: "#000" }}>
       <Router>
         <Navbar />
-        <Route path="/code-arsenal/" exact component={HomePage} />
-        <Route
-          path="/code-arsenal/stack"
-          exact
-          render={() => <DS header="Stack" gistId={gistDirectory[0].Stack} />}
-        />
+        <Switch>
+          <Route
+            path="/code-arsenal/stack"
+            exact
+            render={() => <DS header="Stack" gistId={gistDirectory[0].Stack} />}
+          />
+          {/* <Route
+            path="/code-arsenal/mergesort"
+            exact
+            render={() => (
+              <DS header="Merge Sort" gistId={gistDirectory[1].MergeSort} />
+            )}
+          /> */}
+          <Route path="/code-arsenal/" component={HomePage} />
+
+          <Route component={HomePage} />
+        </Switch>
         <Footer />
       </Router>
     </div>

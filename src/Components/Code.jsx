@@ -116,6 +116,7 @@ const DS = ({ header, gistId }) => {
             <ReactEmbedGist
               gist={`anzeqar/${lang.gistId}`}
               file={`${header}.${lang.extension}`}
+              errorClass="error-gist-not-found"
             />
           </section>
         </div>

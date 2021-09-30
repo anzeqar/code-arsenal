@@ -18,3 +18,26 @@ p {
 ::selection {
   background: #0d6efd !important;
 }
+.error-gist-not-found {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d6efd !important;
+  border-radius: 12px;
+  color: white;
+  visibility: hidden;
+  position: relative;
+}
+.error-gist-not-found:after {
+  display: flex;
+  justify-content: center;
+  visibility: visible;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 15px;
+  background-color: #0d6efd !important;
+  border-radius: 12px;
+  color: white;
+  /* position: absolute; */
+  content: "To be added..... ";
+}
