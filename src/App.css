@@ -20,7 +20,7 @@ p {
 }
 .error-gist-not-found {
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   background-color: #0d6efd !important;
   border-radius: 12px;
   color: white;
@@ -34,10 +34,9 @@ p {
   text-align: center;
   width: 100%;
   font-size: 1.5rem;
-  padding: 15px;
+  padding: 12px;
   background-color: #0d6efd !important;
   border-radius: 12px;
   color: white;
-  /* position: absolute; */
-  content: "To be added..... ";
+  content: "To be Added..... ";
 }

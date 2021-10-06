@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar.jsx";
 import HomePage from "./Components/HomePage.jsx";
 import Footer from "./Components/Footer.jsx";
-
+import NotFoundPage from "./Components/NotFoundPage.jsx";
 import Code from "./Components/Code.jsx";
 
 const App = () => {
@@ -19,15 +18,18 @@ const App = () => {
   ];
   // {}
   return (
-    <div className="min-vh-100" style={{ backgroundColor: "#000" }}>
+    <div style={{ backgroundColor: "#000" }}>
       <Router>
         <Navbar />
-        <Route
-          path="/stack"
-          exact
-          render={() => <Code header="Stack" gistId={gistDirectory[0].Stack} />}
-        />
-        {/* <Route
+        <Switch>
+          <Route
+            path="/stack"
+            exact
+            render={() => (
+              <Code header="Stack" gistId={gistDirectory[0].Stack} />
+            )}
+          />
+          {/* <Route
             path="/mergesort"
             exact
             render={() => (
@@ -35,7 +37,9 @@ const App = () => {
             )}
           /> */}
 
-        <Route path="/" exact component={HomePage} />
+          <Route path="/" exact component={HomePage} />
+          <Route component={NotFoundPage} />
+        </Switch>
         <Footer />
       </Router>
     </div>
