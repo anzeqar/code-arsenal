@@ -22,25 +22,20 @@ const App = () => {
     <div className="min-vh-100" style={{ backgroundColor: "#000" }}>
       <Router>
         <Navbar />
-        <Switch>
-          <Route
-            path="/code-arsenal/stack"
-            render={() => (
-              <Code header="Stack" gistId={gistDirectory[0].Stack} />
-            )}
-          />
-          {/* <Route
-            path="/code-arsenal/mergesort"
+        <Route
+          path="/stack"
+          exact
+          render={() => <Code header="Stack" gistId={gistDirectory[0].Stack} />}
+        />
+        {/* <Route
+            path="/mergesort"
             exact
             render={() => (
               <DS header="Merge Sort" gistId={gistDirectory[1].MergeSort} />
             )}
           /> */}
 
-          <Route path="/code-arsenal/" component={HomePage} />
-
-          <Route component={HomePage} />
-        </Switch>
+        <Route path="/" exact component={HomePage} />
         <Footer />
       </Router>
     </div>

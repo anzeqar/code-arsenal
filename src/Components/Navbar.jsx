@@ -36,10 +36,7 @@ const Navbar = () => {
                   className="text-info text-decoration-none"
                   onClick={toggleIndex}
                 >
-                  <Link
-                    to="/code-arsenal/stack"
-                    className="text-info text-decoration-none"
-                  >
+                  <Link to="/stack" className="text-info text-decoration-none">
                     Stack
                   </Link>
                 </li>
