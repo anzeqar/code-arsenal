@@ -86,13 +86,14 @@ const Navbar = () => {
         data-bs-backdrop="false"
       >
         <div className="offcanvas-header">
-          <h1 className="h1 pe-4">Index</h1>
+          <h2 className="h2 pe-4">Index</h2>
         </div>
         <div className="container">
           <input
             type="text"
             name="search"
             id="search"
+            className="bg-dark text-light form-control border-secondary shadow-none"
             placeholder="Search"
             onChange={searchFilter}
           />
@@ -152,7 +153,7 @@ const Navbar = () => {
           </Link>
           <div className="d-flex">
             <button
-              className="btn btn-primary"
+              className="btn btn-primary shadow-none"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvas"
               onClick={toggleIndex}

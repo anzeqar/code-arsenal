@@ -11,11 +11,11 @@ const NotFoundPage = () => {
       <div className="container pt-4 mt-4"></div>
       <h1 className="text-light text-center pb-4 mb-2">404 : Page Not Found</h1>
       <div className="container text-center">
-        <button className="btn btn-primary text-light mb-4">
-          <Link to="/" className="text-light text-decoration-none">
+        <Link to="/" className="text-light text-decoration-none">
+          <button className="btn btn-primary text-light mb-4">
             Back to Home
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </div>
   );

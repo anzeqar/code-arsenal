@@ -12,6 +12,7 @@ const ListItems = ({ index, setIndex, name, link }) => {
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvas"
         className="text-info text-decoration-none"
+        style={{ fontSize: "1.15rem" }}
         onClick={toggleIndex}
       >
         <Link to={link} className="text-info text-decoration-none">
