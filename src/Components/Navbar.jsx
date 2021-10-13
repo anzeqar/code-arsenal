@@ -10,8 +10,12 @@ const Navbar = () => {
   };
   const dsDB = [
     { name: "Stack", link: "/stack" },
-    // { name: "Queue", link: "/queue" },
-    // { name: "Linked List", link: "/linked-list" },
+    { name: "Queue", link: "/queue" },
+    { name: "Linked List", link: "/linked-list" },
+    { name: "Hash Table", link: "/hash-table" },
+    { name: "Binary Search Tree", link: "/binary-search-tree" },
+    { name: "Graph", link: "/graph" },
+    { name: "Heap", link: "/heap" },
   ];
   const algoDB = [
     // { name: "Linear Search", link: "/linear-search" },
