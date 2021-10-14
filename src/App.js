@@ -14,14 +14,25 @@ const App = () => {
       Queue: ["60b78bcb1d5d3aa508e225bda71a8a2d", "", "", "", ""],
       Array: ["e158aebd59e4c301bbf3d87ee400916d", "", "", "", ""],
       LinkedList: ["cc6fc76ac762f7562e390ee3ac5d0a4d", "", "", "", ""],
-      HashTable: ["6eb21f5f8984046e50e5de7dcbdb116c", "", "", "", ""],
-      BinarySearchTree: ["08a9f9faecc6826c092a3885b45a37ed", "", "", "", ""],
-      Graph: ["6733a1cb5e250f48e7547cdb89837aea", "", "", "", ""],
-      Heap: ["77437394fabf8842b2fefd42e37614fe", "", "", "", ""],
     },
-    // {
-    //   MergeSort: ["","","","",""],
-    // },
+    {
+      LinearSearch: ["9d555e26ed72d0f2e145ea9b6fd0296b", "", "", "", ""],
+      BinarySearch: ["2387bb773b68c642d8a2f8fbe70a3948", "", "", "", ""],
+      FactorialRecursion: ["d03b9520443b7964d9753fd3e615ede8", "", "", "", ""],
+      FibonacciRecursion: ["b0649a8020b1e53655fb72ef77b6f02e", "", "", "", ""],
+      FibonacciMemoization: [
+        "15fdcb7d07302c47bd4d9232b8fdaeb0",
+        "",
+        "",
+        "",
+        "",
+      ],
+      BubbleSort: ["5a1bb0b8a0309bdf29cb5202d8b2ea3b", "", "", "", ""],
+      InsertionSort: ["9f90673652f4b455632269614b03822b", "", "", "", ""],
+      SelectionSort: ["5544e7acec966dce91b42e9a0a412583", "", "", "", ""],
+      MergeSort: ["6664e5c958c0222b7ef6ad196996e976", "", "", "", ""],
+      QuickSort: ["202c32ed6b1cc97d57312701083d024a", "", "", "", ""],
+    },
   ];
 
   // {}
@@ -59,42 +70,103 @@ const App = () => {
             )}
           />
           <Route
-            path="/hash-table"
+            path="/array"
             exact
             render={() => (
-              <Code header="Hash Table" gistId={gistDirectory[0].HashTable} />
+              <Code header="Array" gistId={gistDirectory[0].Array} />
             )}
           />
           <Route
-            path="/binary-search-tree"
+            path="/merge-sort"
+            exact
+            render={() => (
+              <Code header="Merge Sort" gistId={gistDirectory[1].MergeSort} />
+            )}
+          />{" "}
+          <Route
+            path="/quick-sort"
+            exact
+            render={() => (
+              <Code header="Quick Sort" gistId={gistDirectory[1].QuickSort} />
+            )}
+          />{" "}
+          <Route
+            path="/selection-sort"
             exact
             render={() => (
               <Code
-                header="Binary Search Tree"
-                gistId={gistDirectory[0].BinarySearchTree}
+                header="Selection Sort"
+                gistId={gistDirectory[1].SelectionSort}
+              />
+            )}
+          />{" "}
+          <Route
+            path="/insertion-sort"
+            exact
+            render={() => (
+              <Code
+                header="Insertion Sort"
+                gistId={gistDirectory[1].InsertionSort}
+              />
+            )}
+          />{" "}
+          <Route
+            path="/bubble-sort"
+            exact
+            render={() => (
+              <Code header="Bubble Sort" gistId={gistDirectory[1].BubbleSort} />
+            )}
+          />{" "}
+          <Route
+            path="/linear-search"
+            exact
+            render={() => (
+              <Code
+                header="Linear Search"
+                gistId={gistDirectory[1].LinearSearch}
+              />
+            )}
+          />{" "}
+          <Route
+            path="/binary-search"
+            exact
+            render={() => (
+              <Code
+                header="Binary Search"
+                gistId={gistDirectory[1].BinarySearch}
               />
             )}
           />
           <Route
-            path="/graph"
+            path="/fibonacci-recursion"
             exact
             render={() => (
-              <Code header="Graph" gistId={gistDirectory[0].Graph} />
+              <Code
+                header="Fibonacci Recursion"
+                gistId={gistDirectory[1].FibonacciRecursion}
+              />
             )}
           />
           <Route
-            path="/heap"
-            exact
-            render={() => <Code header="Heap" gistId={gistDirectory[0].Heap} />}
-          />
-          {/* <Route
-            path="/mergesort"
+            path="/factorial-recursion"
             exact
             render={() => (
-              <DS header="Merge Sort" gistId={gistDirectory[1].MergeSort} />
+              <Code
+                header="Factorial Recursion"
+                gistId={gistDirectory[1].FactorialRecursion}
+              />
             )}
-          /> */}
-
+          />
+          <Route
+            path="/fibonacci-memoization"
+            exact
+            render={() => (
+              <Code
+                header="Fibonacci Memoization"
+                gistId={gistDirectory[1].FibonacciMemoization}
+              />
+            )}
+          />
           <Route path="/" exact component={HomePage} />
           <Route component={NotFoundPage} />
         </Switch>

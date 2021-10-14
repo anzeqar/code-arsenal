@@ -11,16 +11,20 @@ const Navbar = () => {
   const dsDB = [
     { name: "Stack", link: "/stack" },
     { name: "Queue", link: "/queue" },
+    { name: "Array", link: "/array" },
     { name: "Linked List", link: "/linked-list" },
-    { name: "Hash Table", link: "/hash-table" },
-    { name: "Binary Search Tree", link: "/binary-search-tree" },
-    { name: "Graph", link: "/graph" },
-    { name: "Heap", link: "/heap" },
   ];
   const algoDB = [
-    // { name: "Linear Search", link: "/linear-search" },
-    // { name: "Binary Search", link: "/binary-search" },
-    // { name: "Bubble Sort", link: "/bubble-sort" },
+    { name: "Linear Search", link: "/linear-search" },
+    { name: "Binary Search", link: "/binary-search" },
+    { name: "Bubble Sort", link: "/bubble-sort" },
+    { name: "Insetion Sort", link: "/insertion-sort" },
+    { name: "Selection Sort", link: "/selection-sort" },
+    { name: "Merge Sort", link: "/merge-sort" },
+    { name: "Quick Sort", link: "/quick-sort" },
+    { name: "Factorial Recursion", link: "/factorial-recursion" },
+    { name: "Fibonacci Recursion", link: "/fibonacci-recursion" },
+    { name: "Fibonacci Memoization", link: "/fibonacci-memoization" },
   ];
 
   const [nameDS, setnameDS] = useState(

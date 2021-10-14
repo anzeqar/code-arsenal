@@ -40,3 +40,27 @@ p {
   color: white;
   content: "To be Added..... ";
 }
+
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+}
