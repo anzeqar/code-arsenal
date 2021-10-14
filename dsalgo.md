@@ -1,17 +1,19 @@
 # Data Structures
 
-2. Linked List
-3. Stacks
-4. Queues
-5. Hash Tables
-6. BST
-7. Heaps
-8. Graphs
+1. Stack
+2. Queue
+3. Array
+4. Linked List
 
 # Algorithms
 
-1. Sorting Algorithms (Bubble Sort, Counting Sort, Quick Sort, Merge Sort, Radix Sort)
-2. Searching Algorithms (Linear Search, Binary Search)
-3. Graph Traversals (Breadth-First Search, Depth-First Search)
-4. Recursion (Factorial, Fibonacci)
-5. Dynamic Programming (Factorial, Fibonacci)
+1. Linear Search
+2. Binary Search
+3. Bubble Sort
+4. Insetion Sort
+5. Selection Sort
+6. Merge Sort
+7. Quick Sort
+8. Factorial Recursion
+9. Fibonacci Recursion
+10. Fibonacci Memoization
